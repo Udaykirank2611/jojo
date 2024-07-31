@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("Download Zip File from GitHub")
+st.title("Download Zip File")
 
 zip_url = "https://github.com/udaykirank2611/jojo/raw/main/CN LAB.zip"
 
