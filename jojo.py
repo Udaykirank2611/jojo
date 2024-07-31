@@ -6,7 +6,7 @@ st.title("Download Zip File")
 zip_url = "https://github.com/udaykirank2611/jojo/raw/main/CN LAB.zip"
 
 # Provide a download button
-st.markdown(f"[Download zip file]")
+#st.markdown(f"[Download zip file]")
 # Optional: If you want to fetch the file and provide it directly via Streamlit
 response = requests.get(zip_url)
 zip_content = response.content
