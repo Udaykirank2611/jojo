@@ -14,6 +14,6 @@ zip_content = response.content
 st.download_button(
     label="Download zip file",
     data=zip_content,
-    file_name="yourfile.zip",
+    file_name="245122737005.zip",
     mime="application/zip"
 )
