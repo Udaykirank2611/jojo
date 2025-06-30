@@ -3,7 +3,7 @@ import requests
 
 st.title("Download Zip File")
 
-zip_url = "https://github.com/udaykirank2611/jojo/raw/main/DSCCLab2.zip"
+zip_url = "https://github.com/udaykirank2611/jojo/raw/main/DSCClab2.zip"
 
 # Provide a download button
 #st.markdown(f"[Download zip file]")
