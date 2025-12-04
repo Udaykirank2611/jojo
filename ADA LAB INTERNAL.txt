@@ -1,0 +1,59 @@
+install.packages("dplyr")
+install.packages("readr")
+install.packages("ggplot2")
+install.packages("tidyr")
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(tidyr)
+
+//Built in dataset
+data()
+(select any dataset in the list)
+df <- DatasetName
+
+//Using DataFrames
+name <- c("virat","Rohit")
+jersey <- c(18,45)
+tags <- c("king","hitman")
+df <- data.frame(name,jersey,tags)
+
+
+//Reading from csv file
+setwd("path in your computer" (use // not /))
+df <- read.csv("filename.csv")
+
+
+//scatter_plot
+plot(mtcars$wt,mtcars$mpg,main="title",xlab="x_title",ylab="y_title")
+ggplot(mtcars,aes(x=wt,y=mpg))+
+geom_point(color="blue")+
+labs(title="title",x="x_value",y="y_value")
+
+//histogram
+hist(mtcars$mpg,main="title",xlab="x_title",ylab="y_title")
+ggplot(mtcars,aes(x=mpg))+
+geom_histogram(binwidth=1)+
+labs(title="title",x="x_value",y="y_value")
+
+
+//barchart
+barplot(table(mtcars$cyl),main="title",xlab="x_title",ylab="y_title")
+ggplot(mtcars,aes(x=factor(cyl)))+
+geom_bar()+
+labs(title="title",x="x_value",y="y_value")
+
+
+
+//boxplot
+boxplot(mpg~cyl,data=mtcars)
+ggplot(mtcars,aes(x=factor(cyl),y=mpg))+
+geom_boxplot()+
+labs(title="title",x="x_value",y="y_value")
+
+
+//linechart
+plot(mtcars$mpg,type="l",col="blue",main="title",xlab="x_title",ylab="y_title")
+ggplot(mtcars,aes(x=wt,y=cyl,group=1))+
+geom_line(color="blue")+
+labs(title="title",x="x_value",y="y_value")
